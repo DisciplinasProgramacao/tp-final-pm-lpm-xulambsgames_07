@@ -56,7 +56,7 @@ implementação seguindo as recomendações e técnicas de modularidade e POO.
 ```
 -----------------------------------------------------------------------------------------------------------------------------------
 
-**Prazos:**
+**Prazos:** <br />
 **Etapa 1:** entrega do diagrama – até 24/04 (0 ponto, mas pré-requisito para a segunda etapa) <br />
 **Etapa 2:** implementação de backlog a definir – até 15/05 (5 pontos) <br />
 **Etapa 3:** implementação do backlog restante – até 15/06 com apresentação em 17/06 (10 pontos) <br />
