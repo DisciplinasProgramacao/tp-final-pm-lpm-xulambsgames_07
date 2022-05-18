@@ -2,7 +2,7 @@
 
 **a) Contexto do trabalho:** PUC MINAS, Curso: Engenharia de Software/Noturno, Disciplina: Laboratório de Programação Modular, Professor: Cleiton Tavares, Alunos: Guilherme H. L. Biagini
 
-**b) Desenvolvedores:** Guilherme Biagini & XXX & XXX
+**b) Desenvolvedores:** Guilherme Biagini & Thalles Nascimento Carvalho & XXX
 
 **c) Dependências:**
 
