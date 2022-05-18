@@ -57,9 +57,9 @@ implementação seguindo as recomendações e técnicas de modularidade e POO.
 -----------------------------------------------------------------------------------------------------------------------------------
 
 **Prazos:**
-** Etapa 1:** entrega do diagrama – até 24/04 (0 ponto, mas pré-requisito para a segunda etapa)
-** Etapa 2:** implementação de backlog a definir – até 15/05 (5 pontos)
-** Etapa 3:** implementação do backlog restante – até 15/06 com apresentação em 17/06 (10 pontos)
+**Etapa 1:** entrega do diagrama – até 24/04 (0 ponto, mas pré-requisito para a segunda etapa)
+**Etapa 2:** implementação de backlog a definir – até 15/05 (5 pontos)
+**Etapa 3:** implementação do backlog restante – até 15/06 com apresentação em 17/06 (10 pontos)
 
 
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7794729&assignment_repo_type=AssignmentRepo)
