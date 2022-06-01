@@ -1,9 +1,9 @@
 package com.tpfinal;
 
-public class Regulares extends Jogo {
+public class Regular extends Jogo {
   protected double multiplicador = 1;
 
-  Regulares(double precoBase, String nome, double multiplicador) {
+  Regular(double precoBase, String nome, double multiplicador) {
     super(precoBase, nome);
     this.setMultiplicador(multiplicador);
   }

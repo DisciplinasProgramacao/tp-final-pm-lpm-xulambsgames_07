@@ -1,7 +1,7 @@
 package com.tpfinal;
 
 public class Promocao extends Jogo {
-  protected double multiplicador = 1;
+  protected double multiplicador = .5;
 
   Promocao(double precoBase, String nome, double multiplicador) {
     super(precoBase, nome);
