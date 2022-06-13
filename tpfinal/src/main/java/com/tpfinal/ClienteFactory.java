@@ -11,7 +11,7 @@ public class ClienteFactory {
     this.tiposCliente = List.of("cadastrado", "empolgado", "fanatico");
   }
 
-  public ClienteFactory getInstance() {
+  public static ClienteFactory getInstance() {
     if (instance == null) {
       instance = new ClienteFactory();
     }

@@ -11,7 +11,7 @@ public class JogoFactory {
     this.tiposJogo = List.of("lancamento", "premium", "regular", "promocao");
   }
 
-  public JogoFactory getInstance() {
+  public static JogoFactory getInstance() {
     if (instance == null) {
       instance = new JogoFactory();
     }
