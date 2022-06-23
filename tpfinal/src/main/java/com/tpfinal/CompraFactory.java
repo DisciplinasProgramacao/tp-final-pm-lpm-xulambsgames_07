@@ -80,7 +80,7 @@ public class CompraFactory {
       }
       case "4": {
         if (this.tempCliente == null) {
-          System.out.println("Cliente n�o definido");
+          System.out.println("Cliente não definido");
           break;
         }
 
