@@ -146,7 +146,8 @@ public final class App {
             Optional<Cliente> cliente;
 
             do {
-                cliente = clientes.stream().filter((c) -> c.getId() == Integer.parseInt(ScannerUtils.lerInstrucao("Insira o id do Cliente:", scanner))).findFirst();
+                Integer idCliente = Integer.parseInt(ScannerUtils.lerInstrucao("Insira o id do Cliente:", scanner));
+                cliente = clientes.stream().filter((c) -> c.getId() == idCliente).findFirst();
 
                 if (cliente.isEmpty()) {
                     System.out.println("Cliente não encontrado.");
