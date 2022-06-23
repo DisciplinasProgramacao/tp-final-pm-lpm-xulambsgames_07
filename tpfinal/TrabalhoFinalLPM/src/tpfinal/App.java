@@ -116,7 +116,7 @@ public final class App {
 		System.out.println("= 4 - Listar clientes                         =");
 		System.out.println("= 5 - Listar jogos                            =");
 		System.out.println("= 6 - Listar compras                          =");
-		System.out.println("= 7 - Listar histÛrico de usu·rio             =");
+		System.out.println("= 7 - Listar hist√≥rico de usu√°rio             =");
 		System.out.println("= 0 - Encerrar e salvar dados                 =");
 		System.out.println("===============================================");
 	}
@@ -152,7 +152,7 @@ public final class App {
 			System.out.println(clientes.get(a).historicoCategoria(cat));
 			break;
 		default:
-			System.out.println("InstruÁ„o n„o encontrada.\n");
+			System.out.println("Instru√ß√£o n√£o encontrada.\n");
 			break;
 		}
 

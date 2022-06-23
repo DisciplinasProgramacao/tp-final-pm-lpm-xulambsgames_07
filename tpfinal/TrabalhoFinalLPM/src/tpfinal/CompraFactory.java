@@ -1,4 +1,4 @@
-package tpfinal;
+package com.tpfinal;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -40,7 +40,7 @@ public class CompraFactory {
     switch (instrucao) {
       case "1": {
         int dia = Integer.parseInt(ScannerUtils.lerValor(scanner, "Dia: "));
-        int mes = Integer.parseInt(ScannerUtils.lerValor(scanner, "Mês: "));
+        int mes = Integer.parseInt(ScannerUtils.lerValor(scanner, "Mï¿½s: "));
         int ano = Integer.parseInt(ScannerUtils.lerValor(scanner, "Ano: "));
 
         this.tempData = LocalDate.of(ano, mes, dia);
@@ -80,7 +80,7 @@ public class CompraFactory {
       }
       case "4": {
         if (this.tempCliente == null) {
-          System.out.println("Cliente não definido");
+          System.out.println("Cliente nï¿½o definido");
           break;
         }
 

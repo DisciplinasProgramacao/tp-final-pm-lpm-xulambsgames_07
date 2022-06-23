@@ -25,7 +25,7 @@ public class JogoFactory {
     double precoJogo = Double.parseDouble(ScannerUtils.lerValor(scanner, "Preço: "));
     double multiplicador = -1;
 
-    if (tipoJogo == "regular") {
+    if (tipoJogo.equals("regular")) {
       multiplicador = Double.parseDouble(ScannerUtils.lerValor(scanner, "Multiplicador de preço: "));
     }
 

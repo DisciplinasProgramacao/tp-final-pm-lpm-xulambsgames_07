@@ -7,18 +7,18 @@ import java.util.Scanner;
 
 public class CompraFactory {
   private static CompraFactory instance;
-  private ArrayList<Jogo> refJogos;
-  private ArrayList<Cliente> refClientes;
+  private List<Jogo> refJogos;
+  private List<Cliente> refClientes;
   private LocalDate tempData;
   private Cliente tempCliente;
-  private ArrayList<Jogo> tempJogos;
+  private List<Jogo> tempJogos;
 
-  private CompraFactory(ArrayList<Jogo> jogos, ArrayList<Cliente> clientes) {
+  private CompraFactory(List<Jogo> jogos, List<Cliente> clientes) {
     this.refJogos = jogos;
     this.refClientes = clientes;
   }
 
-  public static CompraFactory getInstance(ArrayList<Jogo> jogos, ArrayList<Cliente> clientes) {
+  public static CompraFactory getInstance(List<Jogo> jogos, List<Cliente> clientes) {
     if (instance == null) {
       instance = new CompraFactory(jogos, clientes);
     }
@@ -80,7 +80,7 @@ public class CompraFactory {
       }
       case "4": {
         if (this.tempCliente == null) {
-          System.out.println("Cliente não definido");
+          System.out.println("Cliente n�o definido");
           break;
         }
 
@@ -108,7 +108,8 @@ public class CompraFactory {
     } 
 
     Compra novaCompra = criar(this.tempData, this.tempCliente, this.tempJogos);
-
+    this.tempCliente.addCompra(novaCompra);
+    
     this.tempData = null;
     this.tempCliente = null;
     this.tempJogos = null;
@@ -116,7 +117,7 @@ public class CompraFactory {
     return novaCompra;
   }
 
-  public Compra criar(LocalDate data, Cliente cliente, ArrayList<Jogo> jogos) {
+  public Compra criar(LocalDate data, Cliente cliente, List<Jogo> jogos) {
     return new Compra(data, cliente, jogos);
   }
 }
