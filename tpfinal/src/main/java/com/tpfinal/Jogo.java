@@ -1,41 +1,53 @@
 package com.tpfinal;
 
-public class Jogo {
-  private static int ID_COUNTER = 0;
+import java.io.Serializable;
 
-  protected double multiplicador = 1D;
-  private int id;
-  private double precoBase;
-  private String nome;
+public class Jogo implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
-  Jogo(double precoBase, String nome) {
-    this.id = ++Jogo.ID_COUNTER;
-    this.setNome(nome);
-    this.setPrecoBase(precoBase);
-  }
+	private static int ID_COUNTER = 0;
 
-  public double getPrecoVenda() {
-    return this.getPrecoBase() * this.multiplicador;
-  }
+	protected double multiplicador = 1D;
+	private int id;
+	private double precoBase;
+	private String nome;
 
-  public double getPrecoBase() {
-    return precoBase;
-  }
+	public static void setID_COUNTER(int id) {
+		Jogo.ID_COUNTER = id;
+	}
 
-  public void setPrecoBase(double precoBase) {
-    this.precoBase = precoBase;
-  }
+	Jogo(double precoBase, String nome) {
+		this.id = ++Jogo.ID_COUNTER;
+		this.setNome(nome);
+		this.setPrecoBase(precoBase);
+	}
 
-  public String getNome() {
-    return nome;
-  }
+	public double getPrecoVenda() {
+		return this.getPrecoBase() * this.multiplicador;
+	}
 
-  public void setNome(String nome) {
-    this.nome = nome;
-  }
+	public double getPrecoBase() {
+		return precoBase;
+	}
 
-  @Override
-  public String toString() {
-    return "Tipo: " + this.getClass().getSimpleName() + " > Id: " + this.id + " nome: " + this.nome + " | preco: " + this.getPrecoVenda();
-  }
+	public void setPrecoBase(double precoBase) {
+		this.precoBase = precoBase;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	@Override
+	public String toString() {
+		return "Tipo: " + this.getClass().getSimpleName() + " > Id: " + this.id + " nome: " + this.nome + " | preco: "
+				+ this.getPrecoVenda();
+	}
 }
