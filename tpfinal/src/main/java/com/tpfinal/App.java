@@ -159,6 +159,7 @@ public final class App {
                 System.out.println("=======================================");
                 System.out.println("= 1 - Filtrar pela data da compra     =");
                 System.out.println("= 2 - Filtrar pela categoria          =");
+                System.out.println("= 3 - Exibir histórico completo       =");
                 System.out.println("= 0 - Voltar                          =");
                 System.out.println("=======================================");
 
@@ -176,6 +177,9 @@ public final class App {
                     case "2":
                         String categoria = ScannerUtils.lerValor(scanner, "Tipo do jogo (lancamento/premium/regular/promocao): ", JogoFactory.getInstance().tiposJogo);
                         System.out.println(cliente.get().historicoCategoria(categoria));
+                        break;
+                    case "3":
+                        System.out.println(cliente.get().historico());
                         break;
                     default:
                         break;

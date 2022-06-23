@@ -39,23 +39,6 @@ public class Cliente implements Serializable {
 	
 	public void addCompra(Compra compra) {
 		compras.add(compra);
-
-	}
-
-	public void addCompra(List<Compra> compras) {
-
-	}
-
-	public void verHistorico() {
-
-	}
-
-	public void verHistorico(Date data) {
-
-	}
-
-	public void verHistorico(String categoria) {
-
 	}
 
   public int getId() {
@@ -98,15 +81,24 @@ public class Cliente implements Serializable {
 		this.compras = compras;
 	}
 
-	public String historicoData (LocalDate data) {
+  public String historico() {
 		StringBuilder hist = new StringBuilder();
-		this.compras.stream().filter(c -> c.getData().isEqual(data)).forEach(c -> hist.append(c + " \n "));
+    hist.append("\n");
+		this.compras.stream().forEach(c -> hist.append(c + " \n"));
+		return hist.toString();
+	}
+
+	public String historicoData(LocalDate data) {
+		StringBuilder hist = new StringBuilder();
+    hist.append("\n");
+		this.compras.stream().filter(c -> c.getData().isEqual(data)).forEach(c -> hist.append(c + " \n"));
 		return hist.toString();
 	}
 	
-	public String historicoCategoria (String categoria) {
+	public String historicoCategoria(String categoria) {
 		StringBuilder hist = new StringBuilder();
-		this.compras.stream().filter(c -> c.filterCategoria(categoria)).forEach(c -> hist.append(c + "\n"));
+    hist.append("\n");
+    this.compras.stream().filter(c -> c.filterCategoria(categoria)).forEach(c -> hist.append(c + "\n"));
 		return hist.toString();
 	}
 
