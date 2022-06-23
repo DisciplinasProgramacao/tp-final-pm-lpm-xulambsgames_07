@@ -200,12 +200,7 @@ public final class App {
 
 		System.out.println("\n\n");
 	}
-
-	/**
-	 * Says hello to the world.
-	 * 
-	 * @param args The arguments of the program.
-	 */
+    
 	public static void main(String[] args) {
 		Cliente.setID_COUNTER(clientes.size());
 		Jogo.setID_COUNTER(jogos.size());
